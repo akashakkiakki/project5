@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="row">
+
+ 
+    <nav>
+        
+            <span id="span" style="font-size:30px;cursor:pointer; margin-left: 4%; margin-top: 1%;" onclick="openNav()">&#9776;</span>
+            
+            <a >STORE & <br> EVENT</a>
+
+            <a style="color: rgb(243, 99, 99); font-size: 25px;" >BARNES&NOBLE</a>
+
+            <a >WISHLIST</a>
+
+            
+
+       
+      </nav>
+
+      
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a >Books</a>
+  <a >eBooks</a>
+  <a >NOOK</a>
+  <a >teen & YA</a>
+  <a>Kids</a>
+  <a>Toys</a>
+  <a>Movies</a>
+  <a>Tv</a>
+  <a>Music</a>
+</div>
+
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.body.style.backgroundColor = "white";
+}
+</script>
+<br>
+
+   <img src="https://firebasestorage.googleapis.com/v0/b/project-5-6ca40.appspot.com/o/240_F_296701526_ypBYpbBm62IpXSZVFnacMUpsn0od0Oqo.jpg?alt=media&token=45ee8dc0-2afa-4845-b49d-c8b2b757f330"
+    id="img1" alt="img1">
+   <br>
+   <br>
+   
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="https://firebasestorage.googleapis.com/v0/b/project-5-6ca40.appspot.com/o/240_F_224714765_7dbCXy0incWLHpBYtxeNoxqzFR5fzEyw.jpg?alt=media&token=47cd03e2-eb22-44ee-8270-92afc194aa4c" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="https://firebasestorage.googleapis.com/v0/b/project-5-6ca40.appspot.com/o/240_F_364001273_HBL6oFB91cmrPS0DK6aWlCTI9ZgVWyId.jpg?alt=media&token=cc75ca73-6ea7-4743-a7b3-313d70bc14a6" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="https://firebasestorage.googleapis.com/v0/b/project-5-6ca40.appspot.com/o/240_F_437413090_RnGVGaRsNOonNIEspcTgba9FP2z5xgLE.jpg?alt=media&token=027868d1-db5f-447c-8a0d-1ce557e26817" style="width:100%">
+</div>
+
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); 
+}
+</script>
+
+<div class="row"> 
+  <div class="column">
+  <img src="https://firebasestorage.googleapis.com/v0/b/project-5-6ca40.appspot.com/o/240_F_412961666_UmjpwgtTSTkTgvXxoQ0HudDtc1XJMxkh.jpg?alt=media&token=ef3b0d25-7caf-4de0-aa63-a5d62d5ed10b" style="width:100%">
+  <img src="https://firebasestorage.googleapis.com/v0/b/project-5-6ca40.appspot.com/o/240_F_404636197_sNsmns3m65ekQ7zxnU5dx4iBl2j4d4DM.jpg?alt=media&token=8c4b58aa-60b7-430b-9f15-9a80dde6f544" style="width:100%">
+  <img src="https://firebasestorage.googleapis.com/v0/b/project-5-6ca40.appspot.com/o/240_F_432482157_tJE0fTz17LL3sTGVWdKSHsKume7jMd05.jpg?alt=media&token=be3f79ce-70d9-4cd3-a1db-b789be4db8ed" style="width:100%">
+  </div>
+ 
+  <div class="column">
+  <img src="https://firebasestorage.googleapis.com/v0/b/project-5-6ca40.appspot.com/o/online-web-design_53876-95309.jpg?alt=media&token=fba2e081-4222-4e0c-9f7a-dea181af792b" style="width:100%">
+  <img src="https://firebasestorage.googleapis.com/v0/b/project-5-6ca40.appspot.com/o/240_F_440247321_VjIL9xgjEV7Z3zqGt5L7KwJBzNgA1UiM.jpg?alt=media&token=da002c58-f56c-46d3-ad00-8eff97aba2a4" style="width:100%">
+  <img src="https://firebasestorage.googleapis.com/v0/b/project-5-6ca40.appspot.com/o/240_F_441019372_ckUvfHoDNYgSRSaVnrHUkeq9eZgT9Ii9.jpg?alt=media&token=626ae3c7-df1c-43cc-80e5-adb16374b12e" style="width:100%">
+  
+  
+  </div>
+  <div class="column">
+    <img src="https://firebasestorage.googleapis.com/v0/b/project-5-6ca40.appspot.com/o/notebook-with-toolls-notes-about-web-marketing_132358-4021.jpg?alt=media&token=e0e495bd-dfe9-4c29-93c2-87f915f2d2f0" style="width:100%">
+  <img src="https://firebasestorage.googleapis.com/v0/b/project-5-6ca40.appspot.com/o/notebook-with-tools-notes-about-video-marketing_132358-3896.jpg?alt=media&token=5c27d8ef-f035-49db-96fe-08311c5ca95d" style="width:100%">
+  <img src="https://firebasestorage.googleapis.com/v0/b/project-5-6ca40.appspot.com/o/notebook-with-tools-notes-about-video-marketing-concept_132358-3552.jpg?alt=media&token=1af8f565-0acb-4228-acf2-ba3da22721ba" style="width:100%">
+    </div>
+  
+
+</div>
+</div>
+</body>
+</html>
